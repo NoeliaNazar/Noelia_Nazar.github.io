@@ -1,0 +1,354 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600&family=Tilt+Neon&display=swap');
+*{
+    font-family: "Tilt Neon";
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* SECCION INICIO*/
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(Fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: rgb(39, 156, 55);
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+
+}
+/*MENU LATERAL*/
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: rgb(1, 102, 26);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: aquamarine;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+/* ***** */
+.inicio .contenido-seccion header .logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Tilt";
+    text-shadow: 0 0 35px #fff;
+}
+.inicio .contenido-seccion header .logo .color{
+    color: bisque;
+    font-family: "Tilt"
+}
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: bisque;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+    }
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px rgb(1, 102, 26);
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;   
+}
+.inicio .contenido-seccion .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: bisque;
+    color: rgb(1, 102, 26);
+    border: 1px solid rgb(1, 102, 26);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .contenido-seccion .redes a:hover{
+    color: bisque;
+    background-color: rgb(1, 102, 26);
+    box-shadow: 0 0 20px;
+} 
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 40%;
+    border: 5px solid rgb(39, 156, 55);
+    position: absolute;
+    left: 80%;
+    top: -150px;
+    transform: translate(-50%);
+}
+/** ESTILOS GENERALES*/
+.titulo-seccion{
+    font-family: "Golos";
+    font-size: 1.5rem;
+}
+/**SECCION SOBRE MI*/
+.sobremi{
+    background-color: aliceblue;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobremi .contenido-seccion .especial{
+    color: rgb(39, 156, 55);
+    margin-top: 15px;
+    font-weight: bold;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: black;
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 40%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color: rgb(1, 102, 26);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(1, 102, 26);
+    line-height:  50px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/**SECCION IDIOMAS*/
+.habilidades{
+    padding: 140px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(idiomas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: rgb(1, 102, 26);
+    margin: auto;
+}
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    padding: 0 10px ;
+}
+.habilidades .contenido-seccion h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.habilidades .contenido-seccion .fila .col{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(1, 102, 26)
+    
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 3px solid rgb(1, 102, 26);
+    padding: 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+background-color: rgb(39, 156, 55);
+width: 20px;
+height: 30px;
+margin-right: 2px;
+}
+/**SECCION RESUMEN*/
+.resumen{
+    background-color: rgba(235, 189, 134, 0.979);
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+width: 45%;
+}
+.resumen .contenido-seccion .info .titulo{
+    display: inline-block;
+    color: rgb(1, 102, 26);
+    font-weight: bold;
+    border: 2px solid rgb(1, 102, 26);
+padding: 10px;
+}
+.resumen .contenido-seccion .info table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido-seccion .info table .datos{
+    width: 40%;
+    border-bottom: 1px solid rgb(39, 156, 55);
+}
+.resumen .contenido-seccion .info table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info table p{
+font-size: 14px;
+}
+.resumen .contenido-seccion .info table .promedio{
+display: block;
+color: rgb(1, 102, 26);
+margin-top: 10px;
+font-weight: bold;
+}
+.resumen .contenido-seccion .info table .descipcion{
+border-left: 1px solid rgb(39, 156, 55);
+padding-left: 20px; 
+}
+/**SECCION CONTACTO*/
+.contacto{
+    background-color: rgb(1, 102, 26);
+    padding: 140px 0 100px 0;
+    color: bisque;
+    text-align: center;
+    margin: auto;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: black;
+    font-weight: bold;
+}
+/*SECCION RESPONSIVE*/
+ 
+@media screen and (max-width:800px){
+    .habilidades .contenido-seccion .fila{
+     display: block;   
+    } 
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+      } 
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        justify-content: center;
+    }
+    .sobremi .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-.seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido-seccion .info{
+        display: block;
+    }
+    .resumen .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido-seccion .info .col .table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+ }
